@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+
+     /*var array = [2,3,5,7,9,8,6,4,1];
+     /!* min = array[0]
+        1:
+            i:0
+                j:1
+                    a[j] = 3 < a[i] = 1 ?
+                        => false
+                    ... j = length
+                        min = array[0]
+            i:1
+               j:i+1=2
+                    a[j] = 5 < a[j] = 3 ?
+                        => false
+                            j : 8
+                                => true
+                                    min = array[j]
+                                        temp = array[i] : 3
+                                        array[i] = array[j]
+                                        array[j] = temp
+
+      *!/
+
+     var temp;
+     array.sort().reverse();
+//     for (var i= 0;i< array.length;i++){
+//        debugger;
+//         var min = array[i];
+//         for(var j=i+1; j<array.length;j++){
+//             if (array[j]<min){
+//                 temp = array[i];
+//                 array[i]=array[j];
+//                 array[j]=temp;
+//                 min = array[i];
+//             }
+//
+//         }
+//
+//     }
+     window.console.log(array);
+*/
+
+     var array = [2,3,8,12,7,9,10,11];
+        array = array.sort().reverse();
+
+     /*var tempt;
+     for (var i=0;i<array.length;i++){
+         var max = array[i];
+         for(var j=i+1; j<array.length;j++){
+             if (array[j]>max){
+                 tempt = array[i];
+                 array[i] = array[j];
+                 array[j]=tempt;
+                 max = array[i];
+             }
+         }
+
+     }*/
+     window.console.log(array);
+ </script>
+
+</body>
+</html>

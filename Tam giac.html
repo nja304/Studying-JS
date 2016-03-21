@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="canha" value="3">
+    <input type="text" id="canhb" value="4">
+    <input type="text" id="canhc" value="5">
+    <button onclick="tinhtamgiac()"> Tinh </button>
+    <p id="kq"> Ket qua </p>
+
+    <script>
+
+        var tinhtamgiac=function(){
+
+            var a = document.getElementById("canha").value;
+            var b = document.getElementById("canhb").value;
+            var c = document.getElementById("canhc").value;
+
+            var d = document.getElementById("kq");
+
+            if ((a*a==b*b+c*c)||(b*b==a*a+c*c)||(c*c==b*b+a*a)){
+                d.innerHTML="tam giac vuong"
+            }
+            else {
+                d.innerHTML="tam giac khong vuong"
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

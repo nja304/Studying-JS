@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Printerest made by An</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- Question: 1. co can phai dua form class  vao container ko? =>ko bo vo cung duoc, bat dau tu diem dau cua man hinh
+               2. Làm sao để chỉnh được width của search from
+               3. Vì sao thẻ input ko có thẻ đóng
+               4. Cách inspect code: phân biệt giữa css và html-->
+<!--<div class="row">
+    <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            <input type="text" class="form-control" width="855" placeholder="Search">
+        </div>
+
+    </form>
+</div>-->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           <!-- <a class="navbar-brand" href="#">
+                <img src="img/logo.PNG" alt="logo">
+            </a> -->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <form class="navbar-form navbar-left" role="search">
+                <!-- <div class="form-group">
+                     <input type="text" class="form-control" placeholder="Search">
+                 </div> -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="inp-wrapper">
+                            <a href="#" class="inp-left">
+                                <img src="img/logo.PNG" alt="1">
+                            </a>
+                            <form class="inp-form">
+                                <input type="search">
+                            </form>
+                            <a href="#" class="inp-right">
+                                <span class="icon-bar"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                </div>
+                <!--<div class="form-group has-success has-feedback">-->
+                    <!--&lt;!&ndash;<label class="control-label" for="inputGroupSuccess1">Input group with success</label>&ndash;&gt;-->
+                    <!--<div class="input-group">-->
+                        <!--<span class="input-group-addon">-->
+                            <!--<img src="img/logo.PNG" alt="logo">-->
+                        <!--</span>-->
+                        <!--<input type="text" class="form-control" id="inputGroupSuccess1"-->
+                               <!--aria-describedby="inputGroupSuccess1Status">-->
+                        <!--<span class="input-group-addon">-->
+                            <!--<img src="img/logo.PNG" alt="logo">-->
+                        <!--</span>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash;<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<span id="inputGroupSuccess1Status" class="sr-only">(success)</span>&ndash;&gt;-->
+                <!--</div>-->
+            </form>
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="container-fluid">
+    <div class="row">  <!-- Q5.làm sao chỉnh cố định mà ko rớt hàng cái nút kế bên textbox search
+                Phần này mình chưa làm được
+    -->
+        <!--<div class="col-sm-10">-->
+            <!--<img src="img/logo.PNG" alt="logo">-->
+            <!--<input type="text" style="background-color: gainsboro; width:880px; height: 35px;" placeholder="Search">-->
+        <!--</div>-->
+        <div class="col-sm-2">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Category 1</a></li>
+                    <li><a href="#">Category 2</a></li>
+                    <li><a href="#">Category 3</a></li>
+                    <li><a href="#">Category 4</a></li>
+                    <li><a href="#">Category 5</a></li>
+                    <!-- <li role="separator" class="divider"></li>
+                     <li><a href="#">Separated link</a></li> -->
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <p></p>
+    <div class="row">
+        <div class="col-sm-3 col-lg-2">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="padding: 0px;">
+                    <img class="img-rounded img-responsive" src="img/1.jpg" alt="1">
+                </div>
+                <div class="panel-body">
+                    <p><strong>The 5-Second Solution for a Talkative Class </strong></p>
+                    <p>A 5-Second Solution for a Talkative Class | Cult of Pedagogy</p>
+                </div>
+                <div class="panel-footer" style="padding: 0;">
+                    <div class="list-group" style="margin: 0">
+                        <a href="#" class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-rounded" src="img/icon.jpg" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <strong>Found in</strong>
+                                    <p>Typography</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" style="padding: 0px;">
+                    <img class="img-rounded img-responsive" src="img/21.jpg" alt="1">
+                </div>
+                <div class="panel-body">
+                    <p><strong>The 5-Second Solution for a Talkative Class </strong></p>
+                    <p>A 5-Second Solution for a Talkative Class | Cult of Pedagogy</p>
+                </div>
+                <div class="panel-footer" style="padding: 0;">
+                    <div class="list-group" style="margin: 0">
+                        <a href="#" class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-rounded" src="img/icon.jpg" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <strong>Found in</strong>
+                                    <p>Typography</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-lg-2">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="padding: 0px;">
+                    <img class="img-rounded img-responsive" src="img/2.jpg" alt="1">
+                </div>
+                <div class="panel-body">
+                    <p><strong>The 5-Second Solution for a Talkative Class </strong></p>
+                    <p>A 5-Second Solution for a Talkative Class | Cult of Pedagogy</p>
+                </div>
+                <div class="panel-footer" style="padding: 0;">
+                    <div class="list-group" style="margin: 0">
+                        <a href="#" class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-rounded" src="img/icon.jpg" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <strong>Found in</strong>
+                                    <p>Typography</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" style="padding: 0px;">
+                    <img class="img-rounded img-responsive" src="img/22.jpg" alt="1">
+                </div>
+                <div class="panel-body">
+                    <p><strong>The 5-Second Solution for a Talkative Class </strong></p>
+                    <p>A 5-Second Solution for a Talkative Class | Cult of Pedagogy</p>
+                </div>
+                <div class="panel-footer" style="padding: 0;">
+                    <div class="list-group" style="margin: 0">
+                        <a href="#" class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-rounded" src="img/icon.jpg" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <strong>Found in</strong>
+                                    <p>Typography</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-lg-2">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="padding: 0px;">
+                    <img class="img-rounded img-responsive" src="img/3.jpg" alt="1">
+                </div>
+                <div class="panel-body">
+                    <p><strong>The 5-Second Solution for a Talkative Class </strong></p>
+                    <p>A 5-Second Solution for a Talkative Class | Cult of Pedagogy</p>
+                </div>
+                <div class="panel-footer" style="padding: 0;">
+                    <div class="list-group" style="margin: 0">
+                        <a href="#" class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-rounded" src="img/icon.jpg" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <strong>Found in</strong>
+                                    <p>Typography</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" style="padding: 0px;">
+                    <img class="img-rounded img-responsive" src="img/23.jpg" alt="1">
+                </div>
+                <div class="panel-body">
+                    <p><strong>The 5-Second Solution for a Talkative Class </strong></p>
+                    <p>A 5-Second Solution for a Talkative Class | Cult of Pedagogy</p>
+                </div>
+                <div class="panel-footer" style="padding: 0;">
+                    <div class="list-group" style="margin: 0">
+                        <a href="#" class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-rounded" src="img/icon.jpg" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <strong>Found in</strong>
+                                    <p>Typography</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-lg-2">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="padding: 0px;">
+                    <img class="img-rounded img-responsive" src="img/4.jpg" alt="1">
+                </div>
+                <div class="panel-body">
+                    <p><strong>The 5-Second Solution for a Talkative Class </strong></p>
+                    <p>A 5-Second Solution for a Talkative Class | Cult of Pedagogy</p>
+                </div>
+                <div class="panel-footer" style="padding: 0;">
+                    <div class="list-group" style="margin: 0">
+                        <a href="#" class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-rounded" src="img/icon.jpg" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <strong>Found in</strong>
+                                    <p>Typography</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" style="padding: 0px;">
+                    <img class="img-rounded img-responsive" src="img/24.jpg" alt="1">
+                </div>
+                <div class="panel-body">
+                    <p><strong>The 5-Second Solution for a Talkative Class </strong></p>
+                    <p>A 5-Second Solution for a Talkative Class | Cult of Pedagogy</p>
+                </div>
+                <div class="panel-footer" style="padding: 0;">
+                    <div class="list-group" style="margin: 0">
+                        <a href="#" class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-rounded" src="img/icon.jpg" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <strong>Found in</strong>
+                                    <p>Typography</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-lg-2">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="padding: 0px;">
+                    <img class="img-rounded img-responsive" src="img/5.jpg" alt="1">
+                </div>
+                <div class="panel-body">
+                    <p><strong>The 5-Second Solution for a Talkative Class </strong></p>
+                    <p>A 5-Second Solution for a Talkative Class | Cult of Pedagogy</p>
+                </div>
+                <div class="panel-footer" style="padding: 0;">
+                    <div class="list-group" style="margin: 0">
+                        <a href="#" class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-rounded" src="img/icon.jpg" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <strong>Found in</strong>
+                                    <p>Typography</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" style="padding: 0px;">
+                    <img class="img-rounded img-responsive" src="img/25.jpg" alt="1">
+                </div>
+                <div class="panel-body">
+                    <p><strong>The 5-Second Solution for a Talkative Class </strong></p>
+                    <p>A 5-Second Solution for a Talkative Class | Cult of Pedagogy</p>
+                </div>
+                <div class="panel-footer" style="padding: 0;">
+                    <div class="list-group" style="margin: 0">
+                        <a href="#" class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-rounded" src="img/icon.jpg" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <strong>Found in</strong>
+                                    <p>Typography</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-lg-2">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="padding: 0px;">
+                    <img class="img-rounded img-responsive" src="img/6.jpg" alt="1">
+                </div>
+                <div class="panel-body">
+                    <p><strong>The 5-Second Solution for a Talkative Class </strong></p>
+                    <p>A 5-Second Solution for a Talkative Class | Cult of Pedagogy</p>
+                </div>
+                <div class="panel-footer" style="padding: 0;">
+                    <div class="list-group" style="margin: 0">
+                        <a href="#" class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-rounded" src="img/icon.jpg" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <strong>Found in</strong>
+                                    <p>Typography</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" style="padding: 0px;">
+
+                    <img class="img-rounded img-responsive" src="img/26.jpg" alt="1">
+                </div>
+                <div class="panel-body">
+                    <p><strong>The 5-Second Solution for a Talkative Class </strong></p>
+                    <p>A 5-Second Solution for a Talkative Class | Cult of Pedagogy</p>
+                </div>
+                <div class="panel-footer" style="padding: 0;">
+                    <div class="list-group" style="margin: 0">
+                        <a href="#" class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-rounded" src="img/icon.jpg" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <strong>Found in</strong>
+                                    <p>Typography</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
